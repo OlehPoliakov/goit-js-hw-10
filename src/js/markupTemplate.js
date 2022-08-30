@@ -3,7 +3,7 @@ export function countryСardsTemplate({
   name,
   capital,
   population,
-  languages: [languages],
+  languages,
 }) {
   return /*html*/ `
     <div class="country-info__container">
@@ -17,7 +17,7 @@ export function countryСardsTemplate({
       <p class="country-info__population">
         <span class="country-info__size">Population: </span> ${population}</p>
       <p class="country-info__languages">
-        <span class="country-info__size">Languages: </span> ${languages.name}
+        <span class="country-info__size">Languages: </span> ${languages.map(language => language.name).join(', ')}
       </p>
     </div>
   `;
