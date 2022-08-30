@@ -8,9 +8,7 @@ export function countryСardsTemplate({
   return /*html*/ `
     <div class="country-info__container">
       <div class="country-info__wrapper">
-        <img class="country-info__flags" src="${flags.svg}" alt="${
-    name.official
-  }" width="50" />
+        <img class="country-info__flags" src="${flags.svg}" alt="${name.official}" width="50" />
         <h2 class="country-info__name">${name}</h2>
       </div>
       <p class="country-info__capital">
@@ -19,9 +17,7 @@ export function countryСardsTemplate({
       <p class="country-info__population">
         <span class="country-info__size">Population: </span> ${population}</p>
       <p class="country-info__languages">
-        <span class="country-info__size">Languages: </span> ${Object.values(
-          languages
-        ).join(', ')}
+        <span class="country-info__size">Languages: </span> ${languages.name}
       </p>
     </div>
   `;

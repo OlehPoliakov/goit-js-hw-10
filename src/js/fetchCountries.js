@@ -20,7 +20,6 @@ export default class NewApiService {
         return data;
       });
   }
-
   get name() {
     return this.searchName;
   }
